@@ -1,5 +1,5 @@
 
-const apiKey = "your API key";
+const apiKey = "Your API key";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector('.search input')
@@ -15,7 +15,7 @@ async function checkWeather(city){
     }
     else{
 
-    var data = await response.json();
+    let data = await response.json();
 
     document.querySelector('.city').innerHTML= data.name
     document.querySelector('.temp').innerHTML= Math.round(data.main.temp) + "°c"
